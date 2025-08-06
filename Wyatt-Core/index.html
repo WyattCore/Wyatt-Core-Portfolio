@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wyatt Core Portfolio</title>
+  </head>
+  <body>
+    <script type="module" src="/src/main.ts"></script>
+    <div class="container">
+      <header>
+        <div class="title">
+          <h3>Wyatt Core</h3>
+        </div>
+        <div>
+          <p onclick="location.href='#my-projects'">Work</p>
+          <p onclick="location.href='#about'">About</p>
+          <p onclick="location.href='#contact'">Contact</p>
+        </div>
+      </header>
+      <div class="home-sections">
+        <section class="section-1">
+          <h1>Hi, I'm Wyatt!</h1>
+          <h2>A full stack developer with interests in machine-learning and AI applications.</h2>
+          <div id="contact-me-wrapper">
+            <h3>My Links</h3>
+            <div id="contact-me">
+              <a href="https://github.com/WyattCore" target="_blank">
+                <div class="github-logo"></div>
+              </a>
+              <a href="https://www.linkedin.com/in/wyatt-core-76848b24a/" class="link" target="_blank">
+                <p>in</p>
+              </a>
+              <a href="./pdfs/resume.pdf" class="link" target="_blank" rel="noopener">
+                <p>View Resume</p>
+              </a>
+            </div>
+          </div>
+          
+        </section>
+          <img src="./images/profile_pic.jpg" id="profile-pic">
+      
+        
+      </div>
+      <hr></hr>
+      <div class="particle-background" id="about">
+        <h1>About Me</h1>
+        <p>As a senior computer science student at the University of Arkansas, I am
+          super motivated to get my career started. To work toward this goal I spend countless hours
+          learning and building new applications.
+        </p>
+        <section class="about-section">
+          <div class="about-div">
+            <h2>Get to know me!</h2>
+            <p>I’m Wyatt Core, a fifth-year Computer Science Engineering student at the University of Arkansas with a <strong>3.9 GPA</strong>
+              and a passion for building intuitive, AI-powered tools. I’ve designed and shipped <strong>“Text Whisperer,”</strong> a Chrome extension
+                that leverages runtime messaging, a Node.js/Express backend, and the OpenAI API to give users instant, contextual insights
+                on any highlighted text. Whether I’m experimenting with React and CSS to craft clean, responsive UIs or diving
+                  into machine-learning pipelines with Scikit-Learn and TensorFlow, I love turning complex problems into elegant, user-focused
+                  solutions. <strong>I’m seeking opportunities</strong> to blend my strong foundation in full-stack development, interests in machine learning and inspired problem solving
+                    into real-world projects that push the boundaries of what intelligent applications can do.</p>
+          </div>
+          <div class="skills-wrapper">
+              <h2>My Skills</h2>
+              <div class="skills">
+                <div>JavaScript</div>
+                <div>CSS</div>
+                <div>HTML</div>
+                <div>React</div>
+                <div>Typescript</div>
+                <div>Full Stack Development</div>
+                <div>Prompt Engineering</div>
+                <div>Git</div>
+                <div>Github</div>
+                <div>Python</div>
+                <div>Data Manipulation</div>
+                <div>ML Model Training</div>
+              </div>
+            </div>
+      </section>
+      
+      <!-- <hr></hr> -->
+        <div id="my-projects">
+          <h1>My Projects</h1>
+          <div class="projects">
+            <a href="https://github.com/WyattCore/Text_Whisperer" target="_blank">
+              <h2>Text Whisperer</h2>
+              <img src="./images/text-whisperer-1.jpg">
+            </a>
+            <div class="description">
+              <a href="https://github.com/WyattCore/Text_Whisperer" class="git-link" target="_blank"><h2>Github Link</h2></a>  
+              <p>Text_Whisperer is a side project I created with the purpose of diving into the world of Chrome Extensions.
+                I decided to learn TypeScript to implement this project, which I really enjoyed doing. I also gained
+                  some more experience in prompt engineering, making the AI responses personalized for this project.
+                  The project is pretty short and simple: You select text on your web page and Text_Whisperer
+                    opens a chat box that tells you more about it, along with extended chat functionality.</p>
+              <div class="skills-wrapper">
+                <div class="skills">
+                  <div>TypeScript</div>
+                  <div>CSS</div>
+                  <div>HTML</div>
+                  <div>Node</div>
+                  <div>Express</div>
+                  <div>OpenAI API</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects">
+            <a href="https://train-smart-ai.vercel.app" target="_blank">
+              <h2>Train-Smart-AI</h2>
+              <img src="./images/train-smart-ai.png">
+            </a>
+            <div class="description">
+              <a href="https://github.com/WyattCore/Train-Smart-AI" class="git-link" target="_blank"><h2>Github Link</h2></a>
+              <p>This is a side project I wanted to develop to show my familiarity with deploying a website using react, javascript, html, node.js, Express, and css. In this project, I worked with accessing ChatGPT's API to tailor a unique and personal experience for the user.
+                A simple demographic form is presented at the start, then the user is asked for their personal fitness goal. This information is then saved and fed to the AI, along with a prompt that tells the AI to come up with questions for the user based off of their information. These questions are presented to the user and when answered, the user is given a formatted personal plan.
+                This plan gives the user their goal, example workouts and a brief schedule, a nutrition guide, and some tips/motivation. The user then has the ability to save the workout, which saves their plan temporarily, where it can be accessed again in the plans tab.</p>
+              <div class="skills-wrapper">
+                <div class="skills">
+                  <div>React</div>
+                  <div>CSS</div>
+                  <div>Node</div>
+                  <div>Express</div>
+                  <div>OpenAI API</div>
+                  <div>Vercel</div>
+                  <div>Render</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- End of My Projects -->
+ 
+      </div>
+<!-- End of particle background -->
+
+    <div class="contact" id="contact">
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <h1>Contact Me!</h1>
+        <input type="hidden" name="access_key" value="93de2bf5-ccea-4c30-a61a-d12cb70e27bd">
+        <input type="text" name="name" placeholder="Full Name" class="contact-input" required>
+        <input type="email" name="email" placeholder="Email" class="contact-input" required>
+        <textarea name="message" placeholder="Your Message" class="contact-txt" required></textarea>
+        <button type="submit" class="btn" onclick="setTimeout(() => this.form.reset(), 10)">Submit</button>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
